@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HospitalScheds.Model
+namespace MedicalSystemManage.Model
 {
     //班次设置表
     public class ShiftsSetting

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HospitalScheds.Model
+namespace MedicalSystemManage.Model
 {
     //考勤统计汇总
     public class Attendancestatisticssummary

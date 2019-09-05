@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HospitalScheds.Model
+namespace MedicalSystemManage.Model
 {
     public class PageModel<T>
     {
