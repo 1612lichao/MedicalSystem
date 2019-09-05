@@ -25,6 +25,13 @@ namespace MedicalSystemManageApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+
+            //注册跨域服务，允许所有来源
+            services.AddCors(options =>
+                options.AddPolicy("AllowAnyCors",
+                p => p.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin().AllowCredentials().AllowAnyOrigin())
+            );
         }
 
 
@@ -35,8 +42,17 @@ namespace MedicalSystemManageApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
 
+
+            //允许跨域访问
+            app.UseCors("AllowAnyCors");
+            app.UseHttpsRedirection();
             app.UseMvc();
+
         }
     }
 }

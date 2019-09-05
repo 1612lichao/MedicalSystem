@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MedicalSystemManage_Iservice\MedicalSystemManage_Iservice.csproj" />
+    <ProjectReference Include="..\MedicalSystemManage_Model\MedicalSystemManage_Model.csproj" />
+  </ItemGroup>
+
 </Project>
