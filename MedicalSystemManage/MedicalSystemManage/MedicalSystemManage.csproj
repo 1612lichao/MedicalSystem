@@ -9,4 +9,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MedicalSystemManageApi\MedicalSystemManageApi.csproj" />
+    <ProjectReference Include="..\MedicalSystemManage_Cache\MedicalSystemManage_Cache.csproj" />
+    <ProjectReference Include="..\MedicalSystemManage_Common\MedicalSystemManage_Common.csproj" />
+    <ProjectReference Include="..\MedicalSystemManage_Iservice\MedicalSystemManage_Iservice.csproj" />
+    <ProjectReference Include="..\MedicalSystemManage_Model\MedicalSystemManage_Model.csproj" />
+    <ProjectReference Include="..\MedicalSystemManage_Service\MedicalSystemManage_Service.csproj" />
+    <ProjectReference Include="..\UnitTestProject_MedicalSystemManage\UnitTestProject_MedicalSystemManage.csproj" />
+  </ItemGroup>
+
 </Project>
