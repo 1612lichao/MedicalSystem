@@ -4,4 +4,20 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MedicalSystemManage_Common\MedicalSystemManage_Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ServiceStack">
+      <HintPath>..\..\..\..\..\..\Redis\Redis安装程序\C#引用的Dll\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\..\..\..\..\..\Redis\Redis安装程序\C#引用的Dll\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface">
+      <HintPath>..\..\..\..\..\..\Redis\Redis安装程序\C#引用的Dll\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -41,6 +41,10 @@ namespace MedicalSystemManageApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
 
 
             //允许跨域访问
