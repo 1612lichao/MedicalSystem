@@ -38,14 +38,14 @@ namespace MedicalSystemManage.MedicalSystemManage_Iservice
         /// <param name="dd"></param>
         /// <param name="id"></param>
         /// <returns></returns>
-        int Update(Announcementform announcementform, int id);
-
+        int Update(Announcementform announcementform);
+         
         /// <summary>
         /// 反填
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
-        List<Announcementform> announcementform();
+         Announcementform  Byid(int id);
 
     }
 }

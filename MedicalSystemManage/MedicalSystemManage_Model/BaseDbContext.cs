@@ -13,7 +13,7 @@ namespace MedicalSystemManage_Model
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("Data Source=169.254.40.236;Initial Catalog=medicalsystem;User ID=root;pwd=123456");
+                optionsBuilder.UseMySQL("Data Source=169.254.139.102;Initial Catalog=hospital;User ID=root;pwd=123456");
             }
         }
 
