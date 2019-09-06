@@ -8,6 +8,7 @@ namespace MedicalSystemManageApi.Controllers
 {
     public class AnnouncementformController : Controller
     {
+
         public IActionResult Index()
         {
             return View();

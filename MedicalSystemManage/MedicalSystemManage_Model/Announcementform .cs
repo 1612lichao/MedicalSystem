@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace MedicalSystemManage.Model
@@ -9,6 +10,7 @@ namespace MedicalSystemManage.Model
     /// </summary>
   public   class Announcementform
     {
+        [Key]
         /// <summary>
         /// 主键ID
         /// </summary>

@@ -7,6 +7,16 @@ namespace MedicalSystemManage_Model
 {
    public class BaseDbContext: DbContext
     {
+
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseMySQL("Data Source=169.254.40.236;Initial Catalog=medicalsystem;User ID=root;pwd=123456");
+            }
+        }
+
         /// <summary>
         /// 消息公布
         /// </summary>
